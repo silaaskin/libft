@@ -6,38 +6,40 @@
 /*   By: saskin <saskin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 16:47:24 by saskin            #+#    #+#             */
-/*   Updated: 2024/10/16 18:58:27 by saskin           ###   ########.fr       */
+/*   Updated: 2024/10/21 16:09:48 by saskin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
-
-void ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == -2147483648)
 	{
-		ft_putchar('-');
-		ft_putchar('2');
+		ft_putchar_fd('-', fd);
+		ft_putchar_fd('2', fd);
 		ft_putnbr_fd(147483648, fd);
 	}
 	else if (n > 9)
 	{
 		ft_putnbr_fd(n / 10, fd);
-		ft_putnbr_fd(n % 10,fd);
+		ft_putnbr_fd(n % 10, fd);
 	}
 	else if (n < 0)
 	{
-		ft_putchar('-');
+		ft_putchar_fd('-', fd);
 		n = -n;
 		ft_putnbr_fd(n, fd);
 	}
 	else
 	{
-		ft_putchar(n + '0');
+		ft_putchar_fd(n + '0', fd);
 	}
 }
+//#include <fcntl.h>
+
+//int	main(void)
+//{
+//	int fd = open("e.txt", O_RDWR | O_CREAT, 0777);
+//	ft_putnbr_fd(123, fd);
+//}

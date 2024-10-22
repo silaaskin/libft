@@ -6,7 +6,7 @@
 /*   By: saskin <saskin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 17:27:46 by saskin            #+#    #+#             */
-/*   Updated: 2024/10/16 18:58:36 by saskin           ###   ########.fr       */
+/*   Updated: 2024/10/21 15:55:20 by saskin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 char	*ft_strdup(const char *s1)
 {
 	int		i;
-	int		len;
 	char	*newsrc;
 	int		l;
 

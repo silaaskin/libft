@@ -6,7 +6,7 @@
 /*   By: saskin <saskin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 20:03:06 by saskin            #+#    #+#             */
-/*   Updated: 2024/10/16 18:58:40 by saskin           ###   ########.fr       */
+/*   Updated: 2024/10/21 16:40:43 by saskin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,5 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	{
 		f(i, &s[i]);
 		i++;
-	}
-}
-void	to_upper(unsigned int index, char *c)
-{
-	if (*c >= 'a' && *c <= 'z')
-	{
-		*c = *c - 32;
 	}
 }
