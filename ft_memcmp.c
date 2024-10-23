@@ -6,7 +6,7 @@
 /*   By: saskin <saskin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 16:28:00 by saskin            #+#    #+#             */
-/*   Updated: 2024/10/22 19:21:48 by saskin           ###   ########.fr       */
+/*   Updated: 2024/10/23 11:19:38 by saskin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (s[i] - p[i]);
 }
-
