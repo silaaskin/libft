@@ -1,18 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_lstlast_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: saskin <saskin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/08 15:48:22 by saskin            #+#    #+#             */
-/*   Updated: 2024/10/23 15:10:56 by saskin           ###   ########.fr       */
+/*   Created: 2024/10/29 17:08:48 by saskin            #+#    #+#             */
+/*   Updated: 2024/10/30 18:34:45 by saskin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
+#include "libft.h"
+
+t_list	*ft_lstlast(t_list *lst)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-		return (1);
-	return (0);
+	if (!lst)
+		return (0);
+	while (lst->next)
+	{
+		lst = lst->next;
+	}
+	return (lst);
 }

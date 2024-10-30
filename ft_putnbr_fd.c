@@ -6,7 +6,7 @@
 /*   By: saskin <saskin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 16:47:24 by saskin            #+#    #+#             */
-/*   Updated: 2024/10/21 16:09:48 by saskin           ###   ########.fr       */
+/*   Updated: 2024/10/23 15:41:37 by saskin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,10 +36,3 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd(n + '0', fd);
 	}
 }
-//#include <fcntl.h>
-
-//int	main(void)
-//{
-//	int fd = open("e.txt", O_RDWR | O_CREAT, 0777);
-//	ft_putnbr_fd(123, fd);
-//}

@@ -6,11 +6,9 @@
 /*   By: saskin <saskin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 13:03:41 by saskin            #+#    #+#             */
-/*   Updated: 2024/10/16 19:40:22 by saskin           ###   ########.fr       */
+/*   Updated: 2024/10/23 15:10:26 by saskin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_atoi(const char *str)
 {
